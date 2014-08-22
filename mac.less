@@ -7,16 +7,21 @@ body {
 	border-radius: 24px;
 	background: #fafafa;
 	padding: 16px;
-	* {
+	//.keyboard 的所有孙元素，也就是所有按键。
+	.btn {
+		background-color: #000;
 		margin: 4px;
 		position: relative;
-		color: fff;
+		color: #fff;
 		margin: 4px;
 		padding: 4px;
 		border-radius: 4px;
+		width: 48px;
+		height: 48px;
+		float: left;	
 	}
 	.min-btn {
-		width: 48px;
+		width: 50px;
 		height: 24px;
 		float: left;
 		.keyname {
@@ -26,9 +31,7 @@ body {
 			bottom: 0px;
 		}
 	}
-	.btn {
-		width: 48px;
-		height: 48px;
-		float: left;
+	.del {
+		width: 76px;
 	}
 }
