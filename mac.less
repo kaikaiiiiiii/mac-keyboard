@@ -30,7 +30,7 @@ body {
 		width: 48px;
 		height: 48px;
 		float: left;
-		transition:background-color 0.4s;
+		transition:background-color 0.4s, top 0.4s, left 0.4s;
 		.upper {
 			display: block;
 		}
@@ -56,8 +56,9 @@ body {
 	}
 	.btn:active, .min-btn:active {
 			background: #000;
-			transition:background-color 0.2s;
-
+			left: 1px;
+			top: 2px;
+			transition:background-color 0.2s, top 0.2s, left 0.2s;
 		}
 	.min-btn {
 		width: 50px;
