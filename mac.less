@@ -17,6 +17,10 @@ body {
 		clear: both;
 	}
 	.btn {
+		-webkit-user-select:none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 		box-shadow: 4px 4px 3px #aaa;
 		font-size: 10px;
 		background-color: #333;
@@ -32,7 +36,7 @@ body {
 		width: 48px;
 		height: 48px;
 		float: left;
-		transition:all 0.4s;
+		transition:all 0.2s;
 		.upper {
 			display: block;
 		}
@@ -56,20 +60,15 @@ body {
 
 		}
 	}
-	.btn:active, .min-btn:active {
+	.btn:active {
 			background: #000;
 			left: 2px;
 			top: 2px;
-			transition:all 0.2s;
+			transition:all 0.1s;
 		}
 	.min-btn {
 		width: 50px;
 		height: 24px;
-		float: left;
-		position: relative;
-		left: 0px;
-		top: 0px;
-		transition:all 0.4s;
 		.icon {
 			font-size: 14px;
 			position: absolute;
