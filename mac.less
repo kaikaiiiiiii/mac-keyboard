@@ -30,6 +30,7 @@ body {
 		width: 48px;
 		height: 48px;
 		float: left;
+		transition:background-color 0.4s;
 		.upper {
 			display: block;
 		}
@@ -53,11 +54,17 @@ body {
 
 		}
 	}
+	.btn:active, .min-btn:active {
+			background: #000;
+			transition:background-color 0.2s;
+
+		}
 	.min-btn {
 		width: 50px;
 		height: 24px;
 		float: left;
 		position: relative;
+		transition:background-color 0.2s;
 		.icon {
 			font-size: 14px;
 			position: absolute;
