@@ -23,6 +23,8 @@ body {
 		border: 1px solid #fff;
 		margin: 4px;
 		position: relative;
+		left: 0px;
+		top: 0px;
 		color: #fff;
 		margin: 4px;
 		padding: 4px;
@@ -30,7 +32,7 @@ body {
 		width: 48px;
 		height: 48px;
 		float: left;
-		transition:background-color 0.4s, top 0.4s, left 0.4s;
+		transition:all 0.4s;
 		.upper {
 			display: block;
 		}
@@ -56,16 +58,18 @@ body {
 	}
 	.btn:active, .min-btn:active {
 			background: #000;
-			left: 1px;
+			left: 2px;
 			top: 2px;
-			transition:background-color 0.2s, top 0.2s, left 0.2s;
+			transition:all 0.2s;
 		}
 	.min-btn {
 		width: 50px;
 		height: 24px;
 		float: left;
 		position: relative;
-		transition:background-color 0.2s;
+		left: 0px;
+		top: 0px;
+		transition:all 0.4s;
 		.icon {
 			font-size: 14px;
 			position: absolute;
