@@ -1,13 +1,21 @@
+@orange: #CD4300;
+@blue: #0074A8;
+
 body {
 	background-color: #eee;
+	width: 1200px;
 }
 .keyboard {
-	display: inline-block;
+	width: 952px;
 	border: 1px solid #fff;
 	border-radius: 24px;
 	background: #fafafa;
 	padding: 16px;
+	margin: 8px auto;
 	box-shadow: 6px 6px 4px #ddd;
+	.clearfix {
+		clear: both;
+	}
 	.btn {
 		box-shadow: 4px 4px 3px #aaa;
 		font-size: 10px;
@@ -28,13 +36,22 @@ body {
 		.lower {
 			display: block;
 		}
-		.altkey {
+		.altkey, .shiftalt {
 			position: absolute;
-			right: 8px;
-			bottom: 8px;
-			font-size: 24px;
+			bottom: 4px;
+			font-size: 20px;
+			height: 22px;
+			width: 22px;
+			padding: 1px;
+			right: 4px;
 		}
+		.altkey {
+			border-bottom: 2px solid @orange;
+		}
+		.shiftalt {
+			border-bottom: 2px solid @blue;
 
+		}
 	}
 	.min-btn {
 		width: 50px;
@@ -95,8 +112,8 @@ body {
 			left: 4px;
 			bottom: 4px;
 		}
-	}
 
+	}
 	.caps, .enter {
 		width: 95px;
 	}
@@ -125,5 +142,17 @@ body {
 	.down, .left, .right {
 		margin-top: 0;
 	}
+
+}
+
+#alt {
+		.alt-l {
+			background: @orange;
+		}
+}
+#shiftalt {
+		.alt-l, .shift-l {
+			background: @blue;
+		}
 
 }
