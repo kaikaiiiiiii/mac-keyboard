@@ -4,8 +4,37 @@
 
 body {
 	background-color: #eee;
-	width: 1200px;
+	min-width: 1000px;
+	width: 100%;
 }
+
+.typing{
+	width: 940px;
+	height: 48px;
+	margin: 8px auto 16px;
+	background: #fff;
+	border-radius: 8px;
+	padding: 4px 16px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 2px 2px #ccc;
+	transition: 0.5s;
+	&:before{
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+		content: " ";
+	}
+	&:hover{
+		border: 1px solid @orange;
+		transition: 0.5s;
+	}
+	#typingdead{
+		font-size: 32px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
 .keyboard {
 	width: 952px;
 	border: 1px solid #fff;
@@ -86,7 +115,7 @@ body {
 		.keyname {
 			font-size: 6px;
 			position: absolute;
-			right: 0px;
+			right: 2px;
 			bottom: 0px;
 		}
 	}
